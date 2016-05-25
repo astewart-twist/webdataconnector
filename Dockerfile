@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM python:2.7
 
 ADD js /app/js
 ADD Simulator /app/Simulator
@@ -8,4 +8,4 @@ ADD start_server_mac.sh /app/start_server.sh
 
 WORKDIR /app
 EXPOSE 8888
-CMD start_server.sh
+CMD /app/start_server.sh
